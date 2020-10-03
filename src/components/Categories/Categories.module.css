@@ -1,0 +1,30 @@
+.Categories {
+    color:#717171;
+    height: 28rem;
+    background-color: #f2f2f2;
+    padding-top: 3.2rem;
+}
+
+.Categories h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 3.2rem;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.Slider {
+    width: 90.7%;
+    margin: 0 auto;
+}
+
+.Slider button {
+    color:#A5A5A5;
+    top: 50%;
+}
+
+@media(max-width: 1000px) {
+    .Slider button {
+        font-size: 0;
+    }
+}

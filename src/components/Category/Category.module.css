@@ -1,0 +1,19 @@
+.Category {
+    list-style: none;
+    margin: 0 10px;
+}
+.Category a {
+    text-decoration: none;
+    color:inherit;
+}
+.Category img {
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.Category figure {
+    margin: 0;
+}
+.Category figcaption {
+    text-align: center;
+    font-size: 18px;
+}

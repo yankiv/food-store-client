@@ -1,0 +1,98 @@
+.Footer {
+    background-color: #444444;
+    color: #ffffff;
+    padding: 44px 62px;
+}
+
+.Footer h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.Description {
+    margin-bottom: 44px;
+}
+.Description p {
+    color: #DDDDDD;
+    font-weight: 100;
+}
+
+.Actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.Actions a {
+    margin-right: 8px;
+    color: #DDDDDD;
+}
+.Actions a:hover {
+    color: #fa9a10;
+    transition: all 0.2s ease-in;
+}
+
+
+.Navigation {
+    order: 1;
+}
+
+.Button {
+    order: 2;
+}
+
+.Button {
+    transform: translatex(76px);
+}
+
+.Social {
+    order: 3;
+    align-items: center;
+    display: flex;
+}
+.Social svg {
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    fill: white;
+    cursor: pointer;
+}
+
+.Social svg:hover {
+    fill: #fa9a10;
+    transition: all 0.2s ease-in;
+}
+
+.Copyright {
+    text-align: center;
+}
+
+
+@media(max-width: 900px) {
+    .Footer {
+        padding: 22px 30px;
+    }
+    .Footer h2 {
+        margin-bottom: 30px;
+    }
+    .Actions{
+        flex-direction: column;
+    }
+    .Button {
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .Button {
+        transform: none;
+    }
+    .Navigation {
+        margin-bottom: 20px;
+    }
+    .Social span {
+        display: none;
+    }
+    
+}
