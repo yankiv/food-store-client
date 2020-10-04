@@ -14,6 +14,7 @@
 .Description {
     margin-bottom: 44px;
 }
+
 .Description p {
     color: #DDDDDD;
     font-weight: 100;
@@ -26,20 +27,6 @@
     margin-bottom: 45px;
 }
 
-.Actions a {
-    margin-right: 8px;
-    color: #DDDDDD;
-}
-.Actions a:hover {
-    color: #fa9a10;
-    transition: all 0.2s ease-in;
-}
-
-
-.Navigation {
-    order: 1;
-}
-
 .Button {
     order: 2;
 }
@@ -48,11 +35,26 @@
     transform: translatex(76px);
 }
 
+.Navigation {
+    order: 1;
+}
+
+.Navigation a {
+    margin-right: 8px;
+    color: #DDDDDD;
+}
+
+.Navigation a:hover {
+    color: #DB1818;
+    transition: all 0.2s ease-in;
+}
+
 .Social {
     order: 3;
     align-items: center;
     display: flex;
 }
+
 .Social svg {
     margin: 0 10px;
     width: 40px;
@@ -62,37 +64,42 @@
 }
 
 .Social svg:hover {
-    fill: #fa9a10;
+    fill: #DB1818;
     transition: all 0.2s ease-in;
 }
 
 .Copyright {
     text-align: center;
+    color: #7C7C7C;
 }
-
 
 @media(max-width: 900px) {
     .Footer {
         padding: 22px 30px;
     }
+
     .Footer h2 {
         margin-bottom: 30px;
     }
+
     .Actions{
         flex-direction: column;
     }
+
     .Button {
         order: 1;
         margin-bottom: 20px;
     }
+
     .Button {
         transform: none;
     }
+
     .Navigation {
         margin-bottom: 20px;
     }
+
     .Social span {
         display: none;
     }
-    
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from './Category.module.css';
 
-const category = (props) => (
+const category = props => (
     <li className={classes.Category}>
         <a href="/">
             <figure>

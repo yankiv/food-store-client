@@ -5,7 +5,7 @@ import classes from './Layout.module.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-const layout = (props) => (
+const layout = props => (
     <div className={classes.Layout}>
         <Header />
         <main >

@@ -1,23 +1,18 @@
 :root {
     --header-height: 60px
 }
+
 .Heading {
     position: relative;
     background: black url("../../assets/images/landing.jpg") center no-repeat;
     background-size: cover;
     height: calc(100vh - var(--header-height));
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.Circle {
-    top: 5%;
-    position: absolute;
-    width: 350px;
-    height: 350px;
-}
+
 .Heading h2 {
     top: 55%;
     position: absolute;
@@ -27,6 +22,14 @@
     font-size: 60px;
     font-weight: 400;
 }
+
+.Circle {
+    top: 5%;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+}
+
 .Button {
     position: absolute;
     bottom: 15%;
@@ -45,13 +48,15 @@
 }
 
 @media(max-width:350px), (max-height:600px) {
+    .Heading h2 {
+        font-size: 20px;
+    }
+
     .Circle {
         width: 250px;
         height: 250px;
     }
-    .Heading h2 {
-        font-size: 20px;
-    }
+    
     .Button {
         font-size: 1em;
     }
