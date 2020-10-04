@@ -2,9 +2,9 @@ import React from 'react';
 
 import classes from './Footer.module.css';
 
-import Instagram from '../Ui/Svg/Footer/Instagram';
-import Facebook from '../Ui/Svg/Footer/Facebook';
-import Button from '../Ui/Button/Button';
+import Instagram from '../../Ui/Svg/Footer/Instagram';
+import Facebook from '../../Ui/Svg/Footer/Facebook';
+import Button from '../../Ui/Button/Button';
 
 const footer = () => (
     <footer className={classes.Footer}>

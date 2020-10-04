@@ -3,14 +3,12 @@ import React from 'react';
 import './App.css';
 
 import Layout from './components/Layout/Layout';
-import Heading from './components/Heading/Heading';
-import Categories from './components/Categories/Categories';
+import Landing from './components/Landing/Landing';
 
 const App = () => (
   <div className="App">
     <Layout>
-      <Heading />
-      <Categories />
+      <Landing />
     </Layout>
   </div>
 );

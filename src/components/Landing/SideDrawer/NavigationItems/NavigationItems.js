@@ -4,9 +4,9 @@ import classes from './NavigationItems.module.css';
 
 import NavigationItem from './NavigationItem/NavigationItem';
 
-import Menu from '../../Ui/Svg/SideDrawer/Menu';
-import Info from '../../Ui/Svg/SideDrawer/Info';
-import Telephon from '../../Ui/Svg/SideDrawer/Info';
+import Menu from '../../../Ui/Svg/SideDrawer/Menu';
+import Info from '../../../Ui/Svg/SideDrawer/Info';
+import Telephon from '../../../Ui/Svg/SideDrawer/Info';
 
 const navigationItems = () => (
     <nav>

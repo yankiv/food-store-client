@@ -1,21 +1,21 @@
 import React, { useEffect } from 'react';
 
 import Glider from 'glider-js';
-import '../../../node_modules/glider-js/glider.min.css';
+import '../../../../node_modules/glider-js/glider.min.css';
 
 import classes from './Categories.module.css';
 
 import Category from './Category/Category';
 
-import categoryPizza from '../../assets/images/category-pizza.png';
-import categoryVareniki from '../../assets/images/category-vareniki.png';
-import categorySalads from '../../assets/images/category-salad.png';
-import categoryDrinks from '../../assets/images/category-drink.png';
-import categoryBurger from '../../assets/images/category-burger.png';
-import categoryCheesePizza from '../../assets/images/category-cheesepizza.png';
-import categoryPopcorn from '../../assets/images/category-popcorn.png';
-import categorySauce from '../../assets/images/category-sauce.png';
-import categoryTopping from '../../assets/images/category-topping.png';
+import categoryPizza from '../../../assets/images/category-pizza.png';
+import categoryVareniki from '../../../assets/images/category-vareniki.png';
+import categorySalads from '../../../assets/images/category-salad.png';
+import categoryDrinks from '../../../assets/images/category-drink.png';
+import categoryBurger from '../../../assets/images/category-burger.png';
+import categoryCheesePizza from '../../../assets/images/category-cheesepizza.png';
+import categoryPopcorn from '../../../assets/images/category-popcorn.png';
+import categorySauce from '../../../assets/images/category-sauce.png';
+import categoryTopping from '../../../assets/images/category-topping.png';
 
 const Categories = () => {
     useEffect(() => {

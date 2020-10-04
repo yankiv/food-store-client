@@ -1,6 +1,6 @@
 .Heading {
     position: relative;
-    background: black url("../../assets/images/landing.jpg") center no-repeat;
+    background: black url("../../../assets/images/landing.jpg") center no-repeat;
     background-size: cover;
     height: calc(100vh - var(--header-height));
     display: flex;
