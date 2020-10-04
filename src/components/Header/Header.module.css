@@ -1,13 +1,36 @@
+:root {
+    --header-height: 60px
+}
+
 .Header {
     top: 0;
-    height: 60px;
-    width: 100%;
+    position: sticky;
+    height: var(--header-height);
     background-color: white;
     box-sizing: border-box;
     border: 1px solid #E8E8E8;
     border-top: none;
-    position: sticky;
+    z-index: 1000;
     display: flex;
     justify-content: center;
-    z-index: 1000;
+}
+
+.Logo {
+    height: 100%;
+}
+
+.Empty {
+    visibility: hidden;
+}
+
+@media (max-width: 500px) {
+    .Header {
+        justify-content: space-between;
+    }
+    
+    .Empty {
+        visibility: visible;
+        width: 60px;
+        height: 60px;
+    }
 }

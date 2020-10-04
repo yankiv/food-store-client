@@ -1,7 +1,3 @@
-:root {
-    --header-height: 60px
-}
-
 .Heading {
     position: relative;
     background: black url("../../assets/images/landing.jpg") center no-repeat;
@@ -23,7 +19,7 @@
     font-weight: 400;
 }
 
-.Circle {
+.Logo {
     top: 5%;
     position: absolute;
     width: 350px;
@@ -52,7 +48,7 @@
         font-size: 20px;
     }
 
-    .Circle {
+    .Logo {
         width: 250px;
         height: 250px;
     }
@@ -63,7 +59,7 @@
 }
 
 @media screen and (min-width: 1600px), (min-height:1050px) {
-    .Circle {
+    .Logo {
         width: 600px;
         height: 600px;
     }

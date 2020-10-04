@@ -5,7 +5,7 @@ import '../../../node_modules/glider-js/glider.min.css';
 
 import classes from './Categories.module.css';
 
-import Category from '../Category/Category';
+import Category from './Category/Category';
 
 import categoryPizza from '../../assets/images/category-pizza.png';
 import categoryVareniki from '../../assets/images/category-vareniki.png';

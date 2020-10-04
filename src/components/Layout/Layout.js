@@ -1,18 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import classes from './Layout.module.css';
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import SideDrawer from '../SideDrawer/SideDrawer';
 
-const layout = props => (
-    <div className={classes.Layout}>
-        <Header />
-        <main >
-            {props.children}
-        </main>
-        <Footer />
-    </div>
-);
+const Layout = props => {
+    const [sideDrawerState, setSideDrawerState] = useState(false);
 
-export default layout;
+    const sideDrawerToggleHandler = () => {
+        setSideDrawerState(prev => !prev);
+        if (!sideDrawerState) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "visible";
+        }
+    };
+
+    return (
+        <div className={classes.Layout}>
+            <Header showSideDrawer={sideDrawerState} drawerToggleClicked={sideDrawerToggleHandler} />
+            <SideDrawer showSideDrawer={sideDrawerState} />
+            <main>
+                {props.children}
+            </main>
+            <Footer />
+        </div>
+    );
+};
+
+export default Layout;

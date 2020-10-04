@@ -6,7 +6,7 @@ const category = props => (
     <li className={classes.Category}>
         <a href="/">
             <figure>
-                <img src={props.img} alt="pizza" />
+                <img src={props.img} alt="Категорія" />
                 <figcaption>{props.children}</figcaption>
             </figure>
         </a>

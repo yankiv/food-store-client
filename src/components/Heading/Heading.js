@@ -7,7 +7,7 @@ import Button from '../Ui/Button/Button';
 
 const heading = () => (
     <section className={classes.Heading}>
-        <div className={classes.Circle}>
+        <div className={classes.Logo}>
             <Logo />
         </div>
         <h2>Швидка доставка піци</h2>
