@@ -16,7 +16,7 @@
 }
 
 .HiddenStart {
-    width: 196px;
+    width: 340px;
     height: 60px;
     display: flex;
     visibility: hidden;
@@ -31,6 +31,10 @@
     padding: 0 24px;
 }
 
+.Contact div {
+    padding-left: 20px;
+}
+
 .DrawerToggle {
     display: none;
 }
@@ -39,7 +43,7 @@
     display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .HiddenStart {
         display: none;
     }

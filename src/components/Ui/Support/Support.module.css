@@ -1,0 +1,23 @@
+.Support {
+    cursor: pointer;
+    display: flex;
+    justify-content: center; 
+}
+
+.Support a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.Icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    justify-content: center;
+}
+
+.Text {
+    color: #616161;
+    border-bottom: 1px dashed;
+}

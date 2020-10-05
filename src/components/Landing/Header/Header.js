@@ -5,6 +5,7 @@ import classes from './Header.module.css';
 import DrawerToggle from '../../Ui/DrawerToggle/DrawerToggle';
 import Logo from '../../Ui/Logo/Logo';
 import Contact from '../../Ui/Contact/Contact';
+import Support from '../../Ui/Support/Support';
 
 const header = props => (
     <header className={classes.Header}>
@@ -17,6 +18,7 @@ const header = props => (
         </div>
         <div className={classes.Contact}>
             <Contact />
+            <Support />
         </div>
         <div className={classes.HiddenEnd}></div>
     </header>
