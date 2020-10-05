@@ -28,7 +28,6 @@ const Landing = () => {
             </main>
             <Footer />
         </React.Fragment>
-
     );
 };
 

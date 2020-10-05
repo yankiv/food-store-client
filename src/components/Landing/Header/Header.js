@@ -4,14 +4,21 @@ import classes from './Header.module.css';
 
 import DrawerToggle from '../../Ui/DrawerToggle/DrawerToggle';
 import Logo from '../../Ui/Logo/Logo';
+import Contact from '../../Ui/Contact/Contact';
 
 const header = props => (
     <header className={classes.Header}>
-        <DrawerToggle showSideDrawer={props.showSideDrawer} clicked={props.drawerToggleClicked} />
+        <div className={classes.HiddenStart}></div>
+        <div className={classes.DrawerToggle}>
+            <DrawerToggle showSideDrawer={props.showSideDrawer} clicked={props.drawerToggleClicked} />
+        </div>
         <div className={classes.Logo}>
             <Logo />
         </div>
-        <div className={classes.Empty}></div>
+        <div className={classes.Contact}>
+            <Contact />
+        </div>
+        <div className={classes.HiddenEnd}></div>
     </header>
 );
 

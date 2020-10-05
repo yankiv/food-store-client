@@ -12,25 +12,50 @@
     border-top: none;
     z-index: 1000;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.HiddenStart {
+    width: 196px;
+    height: 60px;
+    display: flex;
+    visibility: hidden;
 }
 
 .Logo {
     height: 100%;
 }
 
-.Empty {
-    visibility: hidden;
+.Contact {
+    display: flex;
+    padding: 0 24px;
+}
+
+.DrawerToggle {
+    display: none;
+}
+
+.HiddenEnd {
+    display: none;
 }
 
 @media (max-width: 500px) {
-    .Header {
-        justify-content: space-between;
+    .HiddenStart {
+        display: none;
+    }
+
+    .DrawerToggle {
+        display: flex;
     }
     
-    .Empty {
-        visibility: visible;
+    .Contact {
+        display: none;
+    }
+
+    .HiddenEnd {
         width: 60px;
         height: 60px;
+        display: flex;
+        visibility: hidden;
     }
 }
