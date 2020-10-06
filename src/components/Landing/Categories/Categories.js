@@ -31,6 +31,24 @@ const Categories = () => {
                     breakpoint: 0,
                     settings: {
                         slidesToShow: 'auto',
+                        itemWidth: 260,
+                        exactWidth: true,
+                        duration: 0.25
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 'auto',
+                        itemWidth: 290,
+                        exactWidth: true,
+                        duration: 0.25
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 'auto',
                         itemWidth: 325,
                         exactWidth: true,
                         duration: 0.25

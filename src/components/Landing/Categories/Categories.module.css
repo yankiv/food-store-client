@@ -1,14 +1,14 @@
 .Categories {
     color: #717171;
-    height: 28rem;
+    height: 460px;
     background-color: #f2f2f2;
-    padding-top: 3.2rem;
+    padding-top: 50px;
 }
 
 .Categories h2 {
     font-size: 24px;
     text-align: center;
-    margin-bottom: 3.2rem;
+    margin-bottom: 50px;
     margin-top: 0;
     font-weight: 400;
 }
@@ -23,8 +23,32 @@
     top: 50%;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1024px) {
     .Slider button {
         font-size: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .Categories {
+        height: 400px;
+        padding-top: 30px;
+    }
+    
+    .Categories h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 480px) {
+    .Categories {
+        height: 340px;
+        padding-top: 20px;
+    }
+    
+    .Categories h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
     }
 }
