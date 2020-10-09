@@ -14,10 +14,11 @@
     width: 24px;
     height: 24px;
     margin-right: 12px;
-    justify-content: center;
+    fill: #616161;
 }
 
 .Text {
     color: #616161;
+    text-transform: uppercase;
     border-bottom: 1px dashed;
 }
