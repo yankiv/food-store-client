@@ -9,11 +9,15 @@
     transition: all .2s ease-in;
 }
 
+.NavigationItem a:hover,
 .NavigationItem a:active,
-.NavigationItem a:hover {
+.NavigationItem a.active {
     color: #DB1818;
 }
 
-.NavigationItem a:active {
+.NavigationItem a:active,
+.NavigationItem a.active
+{
+    padding-bottom: 15px;
     border-bottom: #DB1818 solid 4px;
 }

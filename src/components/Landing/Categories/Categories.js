@@ -19,7 +19,7 @@ import categoryTopping from '../../../assets/images/category-topping.png';
 
 const Categories = () => {
     useEffect(() => {
-        new Glider(document.querySelector('.glider'), {
+        const glider = new Glider(document.querySelector('.glider'), {
             slidesToShow: 4,
             draggable: true,
             arrows: {
@@ -56,6 +56,8 @@ const Categories = () => {
                 }
             ]
         });
+
+        return () => glider.destroy();
     });
 
     return (

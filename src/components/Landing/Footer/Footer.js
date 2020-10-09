@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import classes from './Footer.module.css';
 
@@ -16,12 +17,12 @@ const footer = () => (
         </div>
         <div className={classes.Actions}>
             <div className={classes.Button}>
-                <Button>Показати меню</Button>
+                <Button href="/store">Показати меню</Button>
             </div>
             <nav className={classes.Navigation}>
-                <a href="/">Акції</a>
-                <a href="/">Інфо</a>
-                <a href="/">Правила</a>
+                <Link to="/store/promotions">Акції</Link>
+                <Link to="/store/info">Інфо</Link>
+                <Link to="/rules">Правила</Link>
             </nav>
             <div className={classes.Social}>
                 <span>Ми в соціальних мережах:</span>

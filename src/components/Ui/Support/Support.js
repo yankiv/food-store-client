@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import classes from './Support.module.css';
 
@@ -6,10 +7,10 @@ import Chat from '../Svg/Header/Chat';
 
 const support = () => (
     <div className={classes.Support}>
-        <a href="/">
+        <Link to="/help">
             <span className={classes.Icon}><Chat /></span>
             <span className={classes.Text}>Допомога</span>
-        </a>
+        </Link>
     </div >
 );
 

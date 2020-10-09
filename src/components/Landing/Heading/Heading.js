@@ -12,7 +12,7 @@ const heading = () => (
         </div>
         <h2>Швидка доставка піци</h2>
         <div className={classes.Button}>
-            <Button>Показати меню</Button>
+            <Button href="/store">Показати меню</Button>
         </div>
     </section>
 );
