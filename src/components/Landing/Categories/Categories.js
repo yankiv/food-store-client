@@ -46,7 +46,7 @@ const Categories = () => {
                     }
                 },
                 {
-                    breakpoint: 768,
+                    breakpoint: 775,
                     settings: {
                         slidesToShow: 'auto',
                         itemWidth: 325,
@@ -58,7 +58,7 @@ const Categories = () => {
         });
 
         return () => glider.destroy();
-    });
+    }, []);
 
     return (
         <section className={classes.Categories}>

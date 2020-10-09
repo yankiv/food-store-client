@@ -29,7 +29,7 @@
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 775px) {
     .Categories {
         height: 400px;
         padding-top: 30px;
