@@ -26,7 +26,6 @@
     width: 30px;
 }
 
-
 .CompanyName {
     color: #0F8C90;
     font-weight: 500;
@@ -50,7 +49,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
+}   
 
 .Navigation {
     margin: auto 0;
@@ -60,13 +59,14 @@
 .Help {
     display: flex;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .Contact {
     height: 100%;
     display: flex;
     justify-content: center;
-    padding-right: 20px;
+    padding: 0 25px;
 }
 
 .RedBox {
@@ -91,6 +91,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    padding: 0 25px;
 }
 
 .Support span {
@@ -146,30 +147,36 @@
     .Navigation {
         order: 2;
         padding: 20px 0;
+        margin: 0 auto;
     }
 
     .Help {
         height: 60px;
         order: 1;
         width: 100%;
-        justify-content: center;
     }
 
     .GreyBox {
-        width: 50%;
         background-color: #8D8B8C;
+        width: 50%;
+    }
+
+    .RedBox {
+        width: 50%;
     }
 
     .Contact span {
         color: white;
         fill: white;
     }
-
-    .RedBox{
-        width: 50%;
-    }
     
     .RedBox::before {
         border-right: 15px solid #8D8B8C;
+    }
+}
+
+@media (max-width: 320px) {
+    .NonSticky {
+        width: 320px;
     }
 }

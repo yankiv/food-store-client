@@ -21,4 +21,5 @@
     color: #616161;
     text-transform: uppercase;
     border-bottom: 1px dashed;
+    white-space: nowrap;
 }
