@@ -16,4 +16,5 @@ const facebook = () => (
         </g>
     </svg>
 );
+
 export default facebook;
