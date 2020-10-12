@@ -1,0 +1,98 @@
+.SideMenu {
+    top: var(--header-height);
+    position: fixed;
+    height: calc(100vh - var(--header-height));
+    width: 241px;
+    border-right: 1px solid #E8E8E8;
+    border-left: 1px solid #E8E8E8;
+    background-color: #fff;
+}
+
+.Logo {
+    height: 150px;
+    width: 150px;
+    margin: 10px auto;
+}
+
+.Timesheet {
+    display: flex;
+    align-items: center;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #F2F2F2;
+    color: #717171;
+    width: 240px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.Cost {
+    display: flex;
+    align-items: center;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #F2F2F2;
+    color: #717171;
+    width: 240px;
+    height: 30px;
+}
+
+.Icon {
+    padding: 0 4px;
+    height: 20px;
+    width: 20px;
+    fill: #b1b1b1;
+}
+
+.Tooltip {
+    position: relative;
+}
+
+.Tooltip div {
+    visibility: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,.25);
+    color: #555;
+    padding-left: 10px;
+    position: absolute;
+    z-index: 1;
+    left: 125%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.Tooltip div::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.Tooltip:hover div {
+    visibility: visible;
+    opacity: 1;
+}
+
+.Tooltip span {
+    display: inline-block;
+    color: #7ed035;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+
+.Tooltip p {
+    font-size: 12px;
+    line-height: 15px;
+    color: #a4a1a1;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 930px) {
+    .SideMenu {
+        display: none;
+    }
+}

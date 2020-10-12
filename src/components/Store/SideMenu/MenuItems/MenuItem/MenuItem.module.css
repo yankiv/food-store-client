@@ -1,0 +1,19 @@
+.MenuItem {
+    font-size: 17px;
+    line-height: 30px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.MenuItem a {
+    color: #717171;
+    text-decoration: none;
+    border-bottom: #DDDDDD 1px dashed;
+}
+
+
+.MenuItem a:hover,
+.MenuItem a:active,
+.MenuItem a.active {
+    color: #DB1818;
+}

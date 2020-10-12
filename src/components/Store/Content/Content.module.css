@@ -1,0 +1,11 @@
+.Content {
+    min-width: 320px;
+    margin-left: 243px;
+    background-color: #F2F2F2;
+}
+
+@media (max-width: 930px){
+    .Content {
+        margin-left: 0;
+    }
+}
