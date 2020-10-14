@@ -1,0 +1,101 @@
+.DropDown {
+    display: none;
+}
+.MobileMenuTrigger {
+    display: none;
+}
+
+@media(max-width: 930px) {
+    .MobileMenuTrigger {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .DropDown {
+        display: block;
+        position: sticky;
+        top: var(--header-height);
+        left: 0;
+        cursor: pointer;
+        margin: 0 20px;
+        padding: 12px 18px;
+        background-color: white;
+        border-top: 1px solid #F2F2F2;
+    }
+
+    .DropDown h3 {
+        font-weight: normal;
+        color: #DB1818;
+        font-size: 16px;
+    }
+
+    .Arrow {
+        position: absolute;
+        transition: all .3s ease-in-out;
+    }
+    
+    .ArrowDown {
+        top: 7px;
+        right: 20px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
+
+    .ArrowUp {
+        top: 15px;
+        right: 15px;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+    }
+
+    .Hidden {
+        position: absolute;
+        top: 44px;
+        left: 0px;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: visibility .2s, opacity .2s ease-in-out;
+    }
+
+    .Show {
+        position: absolute;
+        top: 44px;
+        left: 0px;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        transition: visibility .2s, opacity .2s ease-in-out;
+    }
+
+    .Show h3, .Hidden h3 {
+        color: #717171;
+        font-weight: normal;
+        background-color: white;
+        padding: 12px 18px;
+        border-top: 1px solid #E8E8E8;
+    }
+
+    .Show h3:hover, .Hidden h3:hover {
+        color: #DB1818;
+    }
+
+    .IsSticky {
+        margin: 0;
+        width: auto;
+    }
+}
+
+@media (max-width: 720px) {
+    .DropDown {
+        padding: 12px 18px;
+    }
+
+    .MobileMenuTrigger {
+        margin-top: 140px;
+    }
+}

@@ -8,15 +8,14 @@ import Landing from './components/Landing/Landing';
 import Store from './components/Store/Store';
 
 const App = () => {
-
   let routes = (
     <Switch>
-      <Route path="/store/info" exact component={Store} />
-      <Route path="/store/promotions" exact component={Store} />
-      <Route path="/store" exact component={Store} />
-      <Route path="/rules" exact component={Landing} />
-      <Route path="/help" exact component={Landing} />
-      <Route path="/" exact component={Landing} />
+      <Route path="/info" component={Store} />
+      <Route path="/promotions" component={Store} />
+      <Route path="/store" component={Store} />
+      <Route path="/rules" component={Landing} />
+      <Route path="/help" component={Landing} />
+      <Route path="/" component={Landing} />
     </Switch>
   );
 

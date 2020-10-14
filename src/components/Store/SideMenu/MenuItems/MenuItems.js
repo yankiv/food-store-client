@@ -1,22 +1,21 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 import classes from './MenuItems.module.css';
 
 import MenuItem from './MenuItem/MenuItem';
 
-const MenuItems = () => (
-    <ul className={classes.MenuItems}>
-        <MenuItem href="/store">Популярне</MenuItem>
-        <MenuItem href="/store/pizza">Піца</MenuItem>
-        <MenuItem href="/store/pizza-cheese">Піца з сирними бортиками</MenuItem>
-        <MenuItem href="/store/pizza-adds">Додатки до піци</MenuItem>
-        <MenuItem href="/store/varenyky">Вареники та пельмені</MenuItem>
-        <MenuItem href="/store/salads">Салати</MenuItem>
-        <MenuItem href="/store/other-dishes">Інші страви</MenuItem>
-        <MenuItem href="/store/sauces">Соуси</MenuItem>
-        <MenuItem href="/store/popcorn">Попкорн</MenuItem>
-        <MenuItem href="/store/drinks">Напої</MenuItem>
-    </ul>
-);
+const MenuItems = props => {
+    let routes = props.routes.map(route => (
+        <MenuItem key={route.path} href={props.match.url + route.path}>{route.value}</MenuItem>
+    ));
 
-export default MenuItems;
+    return (
+        <ul className={classes.MenuItems}>
+            <MenuItem href="/store">Популярне</MenuItem>
+            {routes}
+        </ul>
+    );
+};
+
+export default withRouter(MenuItems);

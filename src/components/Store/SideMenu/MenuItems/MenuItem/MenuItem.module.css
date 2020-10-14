@@ -11,9 +11,8 @@
     border-bottom: #DDDDDD 1px dashed;
 }
 
-
 .MenuItem a:hover,
 .MenuItem a:active,
 .MenuItem a.active {
     color: #DB1818;
-}
+}   

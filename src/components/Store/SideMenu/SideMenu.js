@@ -10,7 +10,7 @@ import Terminal from '../../Ui/Svg/Store/Terminal';
 import Car from '../../Ui/Svg/Store/Car';
 import Question from '../../Ui/Svg/Store/Question';
 
-const sideMenu = () => (
+const sideMenu = props => (
     <section className={classes.SideMenu}>
         <div className={classes.Logo}>
             <Logo />
@@ -62,7 +62,7 @@ const sideMenu = () => (
                 </div>
             </div>
             <div className={classes.Menu}>
-                <MenuItems />
+                <MenuItems routes={props.routes} />
             </div>
         </div>
     </section >

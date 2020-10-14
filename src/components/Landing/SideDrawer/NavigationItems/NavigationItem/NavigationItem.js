@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 import classes from './NavigationItem.module.css';
 
-import RightArrow from '../../../../Ui/Svg/SideDrawer/RightArrow';
+import Arrow from '../../../../Ui/Svg/SideDrawer/Arrow';
 
 const navigationItem = props => {
     let link = (
         <Link to={props.href}>
             <span>{props.svg}</span>
             <span>{props.children}</span>
-            <span className={classes.RightArrow}><RightArrow /></span>
+            <span className={classes.RightArrow}><Arrow /></span>
         </Link>
     );
 
@@ -19,7 +19,7 @@ const navigationItem = props => {
             <a href={props.href}>
                 <span>{props.svg}</span>
                 <span>{props.children}</span>
-                <span className={classes.RightArrow}><RightArrow /></span>
+                <span className={classes.RightArrow}><Arrow /></span>
             </a>
         );
     }

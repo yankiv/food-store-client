@@ -1,7 +1,7 @@
 import React from 'react';
 
 const terminal = () => (
-        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 44 44" space="preserve">
                 <path className="st0" d="M28.2,19H13.8c-1.2,0-2.2-0.9-2.3-2.1l-0.4-5.4c0-0.6,0.2-1.3,0.6-1.7s1-0.7,1.7-0.7h15.2
 	c0.6,0,1.3,0.3,1.7,0.7c0.4,0.5,0.7,1.1,0.6,1.7l-0.4,5.4C30.4,18.1,29.4,19,28.2,19z M13.4,11c-0.1,0-0.2,0.1-0.2,0.1
