@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import Glider from 'glider-js';
 import '../../../../node_modules/glider-js/glider.min.css';
@@ -18,8 +18,10 @@ import categorySauce from '../../../assets/images/category-sauce.png';
 import categoryTopping from '../../../assets/images/category-topping.png';
 
 const Categories = () => {
+    const gliderRef = useRef();
+
     useEffect(() => {
-        const glider = new Glider(document.querySelector('.glider'), {
+        const glider = new Glider(gliderRef.current, {
             slidesToShow: 4,
             draggable: true,
             arrows: {
@@ -58,7 +60,7 @@ const Categories = () => {
         });
 
         return () => glider.destroy();
-    }, []);
+    }, [gliderRef]);
 
     return (
         <section className={classes.Categories}>
@@ -66,7 +68,7 @@ const Categories = () => {
                 <h2>Категорії</h2>
                 <div className={classes.Slider}>
                     <button className="glider-prev" style={{ left: 20 }}>&lt;</button>
-                    <ul className="glider" style={{ padding: 0 }}>
+                    <ul ref={gliderRef} className="glider" style={{ padding: 0 }}>
                         <Category img={categoryPizza}>Піца</Category>
                         <Category img={categoryCheesePizza}>Піца сирний борт</Category>
                         <Category img={categoryTopping}>Додатки до піци</Category>

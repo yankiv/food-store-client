@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Header from './Header/Header';
 import Heading from './Heading/Heading';
@@ -9,17 +9,20 @@ import SideDrawer from './SideDrawer/SideDrawer';
 const Landing = () => {
     const [sideDrawerState, setSideDrawerState] = useState(false);
 
+    useEffect(() => {
+        return () => document.body.style.overflow = "unset";
+    }, []);
+
     const sideDrawerToggleHandler = () => {
         setSideDrawerState(prev => !prev);
-        if (!sideDrawerState) {
+        if (!sideDrawerState)
             document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "visible";
-        }
+        else
+            document.body.style.overflow = "unset";
     };
 
     return (
-        <React.Fragment>
+        <>
             <Header showSideDrawer={sideDrawerState} drawerToggleClicked={sideDrawerToggleHandler} />
             <SideDrawer showSideDrawer={sideDrawerState} />
             <main>
@@ -27,7 +30,7 @@ const Landing = () => {
                 <Categories />
             </main>
             <Footer />
-        </React.Fragment>
+        </>
     );
 };
 
